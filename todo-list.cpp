@@ -70,6 +70,8 @@ int main() {
         if(todoItems.empty()) {
             cout << "Dear user, kindly type in your first todo" << endl;
         }
+
+        cout << endl << endl;
         // options for a user to choose from
         cout << "(a)dd a new Todo" << endl;
         cout << "(C)complete a Todo" << endl;
@@ -87,7 +89,6 @@ int main() {
             cin.clear();    //clears input buffer inorder to start with a fresh buffer
             cin.ignore();   //to ignore 1st return
             getline(cin, input_description);    //to capture description
-            cin >> input_description;
 
             TodoItem newItem;
             newItem.create(input_description);
